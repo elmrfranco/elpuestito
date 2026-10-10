@@ -1,242 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Catálogo de productos y ofertas de El Puestito, Villa Pehuén, Arauco."
+  >
 
   <title>El Puestito | Minimarket en Arauco</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <link rel="stylesheet" href="styles.css">
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f8fa;
-      color: #202124;
-    }
-
-    header {
-      background: #0645c9;
-      color: white;
-      padding: 18px 5%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .marca {
-      font-size: 24px;
-      font-weight: 800;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #0439a7, #0874e8);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .hero h1 {
-      font-size: clamp(38px, 8vw, 70px);
-      margin: 0;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin: 12px 0 0;
-    }
-
-    main {
-      width: min(1200px, 92%);
-      margin: auto;
-    }
-
-    section {
-      margin: 50px 0;
-    }
-
-    h2 {
-      font-size: 28px;
-      margin-bottom: 25px;
-    }
-
-    .buscador {
-      width: 100%;
-      padding: 16px 20px;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      font-size: 17px;
-      margin-bottom: 20px;
-    }
-
-    .categorias {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
-
-    .categoria {
-      border: 0;
-      background: #e8eefb;
-      padding: 11px 18px;
-      border-radius: 50px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    .categoria:hover,
-    .categoria.activa {
-      background: #0645c9;
-      color: white;
-    }
-
-    .productos {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 22px;
-    }
-
-    .producto {
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,.07);
-    }
-
-    .producto-imagen {
-      aspect-ratio: 1 / 1;
-      background: #f1f3f4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 50px;
-    }
-
-    .producto-info {
-      padding: 16px;
-    }
-
-    .producto h3 {
-      margin: 0 0 5px;
-      font-size: 18px;
-    }
-
-    .descripcion {
-      color: #666;
-      margin: 0 0 12px;
-    }
-
-    .precio {
-      color: #0645c9;
-      font-size: 25px;
-      font-weight: 800;
-      margin: 0;
-    }
-
-    footer {
-      margin-top: 60px;
-      background: #062b72;
-      color: white;
-      text-align: center;
-      padding: 35px 20px;
-    }
-
-    @media (max-width: 850px) {
-      .productos {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 450px) {
-      main {
-        width: 94%;
-      }
-
-      .hero {
-        padding: 45px 15px;
-      }
-
-      .productos {
-        gap: 12px;
-      }
-
-      .producto-info {
-        padding: 12px;
-      }
-
-      .producto h3 {
-        font-size: 16px;
-      }
-
-      .precio {
-        font-size: 22px;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
 <header>
-  <div class="marca">🛍️ El Puestito</div>
+
+  <div class="marca">
+
+    <img
+      class="logo"
+      src="img/logo.png"
+      alt="El Puestito"
+    >
+
+    <span>El Puestito</span>
+
+  </div>
+
 </header>
 
+
 <div class="hero">
-  <h1>EL PUESTITO</h1>
-  <p>Todo lo que necesitas, siempre cerca de ti.</p>
+
+  <img
+    src="img/banner.webp"
+    alt="El Puestito - Todo lo que necesitas, siempre cerca de ti"
+  >
+
 </div>
+
 
 <main>
 
   <section>
+
     <h2>🔥 Ofertas destacadas</h2>
 
-    <div class="productos">
+    <div
+      class="productos"
+      id="destacados"
+    ></div>
 
-      <article class="producto">
-        <div class="producto-imagen">🧻</div>
-        <div class="producto-info">
-          <h3>Abolengo XL</h3>
-          <p class="descripcion">Toalla de papel · 100 m</p>
-          <p class="precio">$2.500</p>
-        </div>
-      </article>
-
-      <article class="producto">
-        <div class="producto-imagen">☕</div>
-        <div class="producto-info">
-          <h3>Fina Selección</h3>
-          <p class="descripcion">Nescafé · 200 g</p>
-          <p class="precio">$10.490</p>
-        </div>
-      </article>
-
-      <article class="producto">
-        <div class="producto-imagen">🥛</div>
-        <div class="producto-info">
-          <h3>Milo</h3>
-          <p class="descripcion">Nestlé · 1 kg</p>
-          <p class="precio">$7.500</p>
-        </div>
-      </article>
-
-      <article class="producto">
-        <div class="producto-imagen">🥚</div>
-        <div class="producto-info">
-          <h3>Huevos Primera</h3>
-          <p class="descripcion">Bandeja · 30 unidades</p>
-          <p class="precio">$5.500</p>
-        </div>
-      </article>
-
-    </div>
   </section>
 
+
   <section>
+
     <h2>🛒 Nuestro catálogo</h2>
 
     <input
@@ -244,134 +73,91 @@
       id="buscador"
       type="search"
       placeholder="🔎 Buscar productos..."
+      autocomplete="off"
     >
 
+
     <div class="categorias">
-      <button class="categoria activa" data-categoria="todos">Todos</button>
-      <button class="categoria" data-categoria="abarrotes">Abarrotes</button>
-      <button class="categoria" data-categoria="bebidas">Bebidas</button>
-      <button class="categoria" data-categoria="congelados">Congelados</button>
-      <button class="categoria" data-categoria="refrigerados">Refrigerados</button>
-      <button class="categoria" data-categoria="aseo">Aseo y hogar</button>
-      <button class="categoria" data-categoria="snacks">Snacks y dulces</button>
+
+      <button
+        class="categoria activa"
+        data-categoria="todos"
+      >
+        Todos
+      </button>
+
+      <button
+        class="categoria"
+        data-categoria="abarrotes"
+      >
+        Abarrotes
+      </button>
+
+      <button
+        class="categoria"
+        data-categoria="bebidas"
+      >
+        Bebidas
+      </button>
+
+      <button
+        class="categoria"
+        data-categoria="congelados"
+      >
+        Congelados
+      </button>
+
+      <button
+        class="categoria"
+        data-categoria="refrigerados"
+      >
+        Refrigerados
+      </button>
+
+      <button
+        class="categoria"
+        data-categoria="aseo"
+      >
+        Aseo y hogar
+      </button>
+
+      <button
+        class="categoria"
+        data-categoria="snacks"
+      >
+        Snacks y dulces
+      </button>
+
     </div>
 
-    <div class="productos" id="catalogo"></div>
+
+    <div
+      class="productos"
+      id="catalogo"
+    ></div>
+
   </section>
 
 </main>
 
+
 <footer>
+
   <strong>El Puestito</strong>
-  <p>📍 Villa Pehuén, Pasaje Pura 1686, Arauco</p>
-  <p>🕙 Lunes a domingo · 10:00 a 20:00 hrs</p>
+
+  <p>
+    📍 Villa Pehuén, Pasaje Pura 1686, Arauco
+  </p>
+
+  <p>
+    🕙 Lunes a domingo · 10:00 a 20:00 hrs
+  </p>
+
 </footer>
 
-<script>
 
-const productos = [
-  {
-    nombre: "Milo",
-    descripcion: "Nestlé · 1 kg",
-    precio: 7500,
-    categoria: "abarrotes",
-    emoji: "🥛"
-  },
-  {
-    nombre: "Fina Selección",
-    descripcion: "Nescafé · 200 g",
-    precio: 10490,
-    categoria: "abarrotes",
-    emoji: "☕"
-  },
-  {
-    nombre: "Huevos Primera",
-    descripcion: "Bandeja · 30 unidades",
-    precio: 5500,
-    categoria: "refrigerados",
-    emoji: "🥚"
-  },
-  {
-    nombre: "Pechuga Ariztía",
-    descripcion: "Bolsa · 700 g",
-    precio: 3690,
-    categoria: "congelados",
-    emoji: "🍗"
-  },
-  {
-    nombre: "Abolengo XL",
-    descripcion: "Toalla de papel · 100 m",
-    precio: 2500,
-    categoria: "aseo",
-    emoji: "🧻"
-  },
-  {
-    nombre: "Sureñas Super Cerdo",
-    descripcion: "Salchichas",
-    precio: 2390,
-    categoria: "refrigerados",
-    emoji: "🌭"
-  }
-];
-
-let categoriaActual = "todos";
-
-function mostrarProductos() {
-
-  const catalogo = document.getElementById("catalogo");
-  const busqueda = document.getElementById("buscador").value.toLowerCase();
-
-  const filtrados = productos.filter(producto => {
-
-    const coincideCategoria =
-      categoriaActual === "todos" ||
-      producto.categoria === categoriaActual;
-
-    const coincideBusqueda =
-      producto.nombre.toLowerCase().includes(busqueda) ||
-      producto.descripcion.toLowerCase().includes(busqueda);
-
-    return coincideCategoria && coincideBusqueda;
-  });
-
-  catalogo.innerHTML = filtrados.map(producto => `
-    <article class="producto">
-      <div class="producto-imagen">${producto.emoji}</div>
-
-      <div class="producto-info">
-        <h3>${producto.nombre}</h3>
-        <p class="descripcion">${producto.descripcion}</p>
-        <p class="precio">
-          $${producto.precio.toLocaleString("es-CL")}
-        </p>
-      </div>
-    </article>
-  `).join("");
-
-}
-
-document.querySelectorAll(".categoria").forEach(boton => {
-
-  boton.addEventListener("click", () => {
-
-    document.querySelectorAll(".categoria")
-      .forEach(b => b.classList.remove("activa"));
-
-    boton.classList.add("activa");
-
-    categoriaActual = boton.dataset.categoria;
-
-    mostrarProductos();
-  });
-
-});
-
-document.getElementById("buscador")
-  .addEventListener("input", mostrarProductos);
-
-mostrarProductos();
-
-</script>
+<script src="productos.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
