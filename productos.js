@@ -56,7 +56,7 @@ const productos = [
     precio: 1100,
     categoria: "aseo",
     imagen: "img/productos/abolengo1.png"
-  }
+  },
 
   {
     nombre: "Arroz",
