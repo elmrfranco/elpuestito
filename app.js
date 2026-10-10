@@ -41,10 +41,6 @@ function crearProducto(producto) {
 function mostrarDestacados() {
   const contenedor = document.getElementById("destacados");
 
-  const destacados = productos.filter(
-    producto => producto.destacado
-  );
-
   contenedor.innerHTML = destacados
     .map(crearProducto)
     .join("");
