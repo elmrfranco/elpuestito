@@ -45,7 +45,7 @@ const productos = [
   {
     nombre: "Huevos",
     descripcion: "Bandeja · 30u",
-    precio: 990,
+    precio: 5.090,
     categoria: "abarrotes",
     imagen: "img/productos/huevo30.png"
   },
@@ -53,7 +53,7 @@ const productos = [
   {
     nombre: "Abolengo",
     descripcion: "Papel Cocina · 100m",
-    precio: 1100,
+    precio: 2500,
     categoria: "aseo",
     imagen: "img/productos/abolengo1.png"
   },
