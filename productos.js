@@ -43,16 +43,16 @@ const productos = [
   },
 
   {
-    nombre: "Arroz",
-    descripcion: "1 kg",
+    nombre: "Huevos",
+    descripcion: "Bandeja · 30u",
     precio: 990,
     categoria: "abarrotes",
     imagen: "img/productos/huevo30.png"
   },
 
   {
-    nombre: "Harina",
-    descripcion: "1 kg",
+    nombre: "Abolengo",
+    descripcion: "Papel Cocina · 100m",
     precio: 1100,
     categoria: "aseo",
     imagen: "img/productos/abolengo1.png"
