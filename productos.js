@@ -64,5 +64,14 @@ const productos = [
     precio: 990,
     categoria: "abarrotes",
     imagen: "img/productos/arroz-1kg.png"
-  }
+  },
+  
+  {
+  nombre: "Pechuga de pollo Ariztía",
+  descripcion: "Pechuga deshuesada · 700 g",
+  precio: 3690,
+  categoria: "congelados",
+  imagen: "img/productos/pechuga-ariztia-700g.png",
+  promocion: "3 por $10.000"
+}
 ];
