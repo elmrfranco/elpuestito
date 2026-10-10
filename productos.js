@@ -3,31 +3,26 @@ const destacados = [
     nombre: "Abolengo XL",
     descripcion: "Toalla de papel · 100 m",
     precio: 2500,
-    imagen: "img/destacados/abolengo-100m.png"
+    imagen: "img/destacados/Abolengo100m.png"
   },
   {
     nombre: "Fina Selección",
     descripcion: "Nescafé · 200 g",
     precio: 10490,
-    imagen: "img/destacados/fina-200g.png"
+    imagen: "img/destacados/fina200g.png"
   },
   {
     nombre: "Milo",
     descripcion: "Nestlé · 1 kg",
     precio: 7500,
-    imagen: "img/destacados/milo-1kg.png"
+    imagen: "img/destacados/milo1kg.png"
   },
   {
     nombre: "Huevos",
     descripcion: "Bandeja · 30 unidades",
     precio: 5090,
-    imagen: "img/destacados/huevos-30u.png"
+    imagen: "img/destacados/bandeja_huevo30u.png"
   }
 ];
 
-
-/* CATÁLOGO GENERAL */
-
-const productos = [
-  // Aquí iremos agregando los productos normales.
-];
+const productos = [];
