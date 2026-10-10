@@ -31,7 +31,7 @@ const productos = [
     descripcion: "Nescafé · 200 g",
     precio: 10490,
     categoria: "abarrotes",
-    imagen: "img/productos/finas200g.png"
+    imagen: "img/productos/finas200.png"
   },
 
   {
