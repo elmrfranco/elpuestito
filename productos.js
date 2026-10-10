@@ -4,7 +4,7 @@ const productos = [
     descripcion: "Nestlé · 1 kg",
     precio: 7500,
     categoria: "abarrotes",
-    imagen: "img/productos/milo.webp",
+    imagen: "img/productos/milo1kg.png",
     destacado: true
   },
 
@@ -13,7 +13,7 @@ const productos = [
     descripcion: "Nescafé · 200 g",
     precio: 10490,
     categoria: "abarrotes",
-    imagen: "img/productos/fina-seleccion.webp",
+    imagen: "img/productos/fina200g.png",
     destacado: true
   },
 
@@ -22,7 +22,7 @@ const productos = [
     descripcion: "Bandeja · 30 unidades",
     precio: 5500,
     categoria: "refrigerados",
-    imagen: "img/productos/huevos.webp",
+    imagen: "img/productos/bandeja_huevo30u.png",
     destacado: true
   },
 
@@ -31,7 +31,7 @@ const productos = [
     descripcion: "Toalla de papel · 100 m",
     precio: 2500,
     categoria: "aseo",
-    imagen: "img/productos/abolengo-xl.webp",
+    imagen: "img/productos/Abolengo100m.png",
     destacado: true
   },
 
