@@ -25,4 +25,44 @@ const destacados = [
   }
 ];
 
-const productos = [];
+const productos = [
+  {
+    nombre: "Fina Selección",
+    descripcion: "Nescafé · 200 g",
+    precio: 10490,
+    categoria: "abarrotes",
+    imagen: "img/productos/finas200g.png"
+  },
+
+  {
+    nombre: "Milo",
+    descripcion: "Nestlé · 1 kg",
+    precio: 7500,
+    categoria: "abarrotes",
+    imagen: "img/productos/milo1.png"
+  },
+
+  {
+    nombre: "Arroz",
+    descripcion: "1 kg",
+    precio: 990,
+    categoria: "abarrotes",
+    imagen: "img/productos/huevo30.png"
+  },
+
+  {
+    nombre: "Harina",
+    descripcion: "1 kg",
+    precio: 1100,
+    categoria: "aseo",
+    imagen: "img/productos/abolengo1.png"
+  }
+
+  {
+    nombre: "Arroz",
+    descripcion: "1 kg",
+    precio: 990,
+    categoria: "abarrotes",
+    imagen: "img/productos/arroz-1kg.png"
+  }
+];
